@@ -1,0 +1,177 @@
+.weather-app {
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(180deg, #4a2ca3 0%, #ba94bf 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  font-family: monospace;
+}
+
+.weather-app form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-app .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.weather-app .search-input {
+  width: 70%;
+  font-size: 18px;
+  margin-top: 25px;
+  border: 2px solid linear-gradient(180deg, #c9e4ca 0%, #e4f7f5 100%);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  animation: slideIn 1s ease-in-out;
+  background: linear-gradient(180deg, #c9e4ca 0%, #e4f7f5 100%);
+  outline: none;
+}
+
+.weather-app .search-btn {
+  padding: 10px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: #f0bd23;
+  color: #fff;
+  cursor: pointer;
+  animation: zoomIn 1s ease-in-out;
+  font-weight: 700;
+}
+
+.weather-app .search-btn:hover {
+  background: #DDB130;
+}
+
+.weather-app .weather-data {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  animation: slideIn 1s ease-in-out;
+}
+
+.weather-app .city-name {
+  font-size: 24px;
+  color: #d61f1f;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.weather-app .weather-description {
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.weather-app .temperature {
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.weather-app .humidity {
+  font-size: 18px;
+  color: #999;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.weather-app .MuiPaper-root {
+  background: linear-gradient(180deg, #e4f7f5 0%, #c9e4ca 100%);
+}
+
+.weather-app .MuiCard-root {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #ff99cc 0%, #ffe6ff 100%);
+}
+
+.weather-app .MuiCardContent-root {
+  padding: 20px;
+}
+
+.weather-app .MuiIconButton-root {
+  padding: 10px;
+}
+
+.weather-app .MuiIcon-root {
+  font-size: 24px;
+  color: #333;
+}
+
+.weather-app .card-content {
+  padding: 20px;
+}
+
+.weather-app .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+.weather-app .card-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.weather-app .MuiIcon-root:hover {
+  color: #ff69b4;
+}
+
+.weather-app .search-btn .MuiIcon-root {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.weather-app .search-btn .MuiIcon-root:hover {
+  color: #fff;
+}
+
+.weather-app .weather-data .MuiIcon-root {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-app .weather-data .MuiIcon-root:hover {
+  color: #ff99cc;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
